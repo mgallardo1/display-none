@@ -1,0 +1,55 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-row {
+	height: 100%;
+	width: 50%;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.gold {
+	background-color: #D4AF37;
+}
+
+.center-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contain-img {
+	max-height: 80%;
+	max-width: 80%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	body {
+		display: block;
+	}
+	.wide-row {
+		height: calc(100%/3);
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+	.contain-img {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	body {
+		display: none;
+	}
+}
